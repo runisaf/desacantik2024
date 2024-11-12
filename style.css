@@ -1,0 +1,1202 @@
+/*
+Theme Name: HVAC
+Theme URI: https://templatesjungle.com/
+Author: TemplatesJungle
+Author URI: https://templatesjungle.com/
+Description: HVAC is specially designed product packaged for HVAC services by TemplatesJungle.
+Version: 1.1
+*/
+
+/*--------------------------------------------------------------
+This is main CSS file that contains custom style rules used in this template
+--------------------------------------------------------------*/
+
+/*------------------------------------*\
+    Table of contents
+\*------------------------------------*/
+
+/*------------------------------------------------
+
+CSS STRUCTURE:
+
+1. VARIABLES
+
+2. GENERAL TYPOGRAPHY
+  2.1 General Styles
+  2.2 Background Color
+  2.3 Section
+    - Section Paddings
+    - Section Margins
+    - Section Title
+  2.4 Buttons
+    - Primary Buttons
+    - Button Hover Effect
+
+3. CONTENT ELEMENTS
+  - Dropdown
+  - Breadcrumb
+  - Pagination
+  - Accordion
+  - Form
+  - Swiper
+  - Modal Video
+
+4. SITE STRUCTURE
+  4.1 Header
+  4.2 Brand Section
+  4.3 About Section
+  4.4 Services Section
+  4.5 Project Section
+  4.6 CTA Section
+
+5. PAGES STYLE
+  5.1 Projects Page
+  5.2 Pricing page 
+  5.3 Reviews page
+    
+
+  
+/*--------------------------------------------------------------
+/** 1. VARIABLES
+--------------------------------------------------------------*/
+:root {
+  --primary-color: #f2b821;
+  --secondary-color: #05213c;
+  --black-color: #292929;
+  --light-black-color: #343536;
+  --dark-color: #313131;
+  --body-color: #5a5a5a;
+  --gray-color: #777f81;
+  --light-color: #fdfdfd;
+  --blue-color: #8adaff;
+
+  /* Bootstrap Theme Color  */
+  --bs-gray-100: #f6f6f6;
+  --bs-gray-300: #dcdcdc;
+  --bs-primary-text-emphasis: var(--primary-color);
+  --bs-body-color-rgb: 90, 90, 90;
+  --bs-light-rgb: rgba(255, 255, 255, 1);
+  --bs-dark-rgb: 41, 41, 41;
+  --bs-primary-rgb: 178, 142, 113;
+}
+
+/* Fonts */
+:root {
+  --heading-font: "Poppins", sans-serif;
+  --body-font: "Poppins", sans-serif;
+}
+
+/*------------------------------------------------------------------
+[ 1 ]*/
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('../fonts/Roboto/Roboto-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url('../fonts/Roboto/Roboto-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url('../fonts/Roboto/Roboto-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Roboto-Black;
+  src: url('../fonts/Roboto/Roboto-Black.ttf'); 
+}
+
+/*------------------------------------------------------------------
+[ 2 ]*/
+@font-face {
+  font-family: Lato-Regular;
+  src: url('../fonts/Lato/Lato-Regular.ttf'); 
+}
+
+/*----------------------------------------------*/
+/* 2 GENERAL TYPOGRAPHY
+/*----------------------------------------------*/
+
+/* 2.1 General Styles
+/*----------------------------------------------*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-color);
+  font-family: var(--body-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 164%;
+  letter-spacing: 0.32px;
+  color: var(--body-color);
+  margin: 0;
+}
+
+p {
+  color: var(--body-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+.text-light {
+  color: var(--light-color) !important;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.text-black {
+  color: var(--black-color) !important;
+}
+
+/* 2.2 Background Color
+/*----------------------------------------------*/
+.bg-light {
+  background-color: var(--light-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color) !important;
+}
+
+.bg-gray {
+  background-color: var(--bs-gray-100) !important;
+}
+
+.bg-blue {
+  background-color: var(--blue-color) !important;
+}
+
+.bg-dark {
+  background-color: var(--dark-color) !important;
+}
+
+.bg-black {
+  background-color: var(--black-color) !important;
+}
+
+/*--------------------------------------------------------------
+/** 2.3 Section
+--------------------------------------------------------------*/
+/* - Section Padding
+--------------------------------------------------------------*/
+.padding-small {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.padding-medium {
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+
+.padding-large {
+  padding-top: 12em;
+  padding-bottom: 12em;
+}
+
+@media only screen and (max-width: 990px) {
+  .padding-small {
+    padding-top: 6em;
+    padding-bottom: 6em;
+  }
+}
+
+/* - Section Margin
+--------------------------------------------------------------*/
+.margin-small {
+  margin-top: 8.125em;
+  margin-bottom: 8.125em;
+}
+
+.margin-medium {
+  margin-top: 10em;
+  margin-bottom: 10em;
+}
+
+.margin-large {
+  margin-top: 12em;
+  margin-bottom: 12em;
+}
+
+/* - Section Title
+--------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-color);
+  font-family: var(--heading-font);
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 0.84px;
+  line-height: 115%;
+}
+
+h6 {
+  font-weight: 500;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 0.3rem; */
+}
+
+/* - Content width
+--------------------------------------------------------------*/
+.container-md {
+  max-width: 1465px;
+}
+
+.container-lg {
+  max-width: 1750px;
+}
+
+/* tambahan */
+.highlight-box {
+  height: 260px;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Height ]*/
+.size-h-1 {
+  max-height: 45px;
+}
+
+.size-h-2 {
+  min-height: 40px;
+}
+
+.size-h-3 {
+  height: 95px;
+}
+
+.size-h-3 {
+  height: 95px;
+}
+
+.size-h-4 {
+  min-height: 80px;
+}
+
+/* .bar-tengah { */
+/* harusnya bikin text di tengah gak gini. Bisa pake grid deng */
+/* margin-left: 250px; */
+/* display: flex;
+  justify-content: center; */
+/* } */
+
+.bar-lokasi {
+  width: 100%;
+}
+
+.bar-folder {
+  width: 15%;
+}
+
+.bar-konten {
+  height: 1000px;
+}
+
+/* Animation */
+@media (min-width: 200px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+/* Animate Slide */
+@keyframes slide {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slide {
+  -webkit-animation-name: slide;
+  animation-name: slide;
+}
+
+/*--------------------------------------------------------------
+/** 2.4 Buttons
+--------------------------------------------------------------*/
+
+.btn {
+  --bs-btn-padding-x: 2rem;
+  --bs-btn-padding-y: 1rem;
+  --bs-btn-font-size: 1rem;
+  --bs-btn-font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 0px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* - Primary Buttons
+--------------------------------------------------------------*/
+.btn-primary {
+  --bs-btn-color: var(--light-color);
+  --bs-btn-bg: var(--primary-color);
+  --bs-btn-border-color: var(--primary-color);
+  --bs-btn-hover-color: var(--light-color);
+  --bs-btn-hover-bg: var(--primary-color);
+  --bs-btn-hover-border-color: var(--primary-color);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: var(--light-color);
+  --bs-btn-active-bg: var(--primary-color);
+  --bs-btn-active-border-color: var(--primary-color);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--light-color);
+  --bs-btn-disabled-bg: var(--primary-color);
+  --bs-btn-disabled-border-color: var(--primary-color);
+}
+
+/* - Button Hover Effect
+--------------------------------------------------------------*/
+.btn-slide.btn-bg {
+  background-color: var(--light-color);
+}
+
+.btn-slide {
+  position: relative;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+}
+
+.btn-slide.hover-slide-right::before {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 3%;
+  position: absolute;
+  content: "";
+  background-color: var(--primary-color);
+  transition: 0.3s ease-in-out;
+}
+
+.btn-slide span {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.btn-slide.hover-slide-right:hover::before {
+  width: 100%;
+}
+
+.btn-slide.hover-slide-right:hover span {
+  color: var(--light-color);
+}
+
+/*--------------------------------------------------------------
+/** 3.CONTENT ELEMENTS
+--------------------------------------------------------------*/
+
+/* Dropdown
+------------------------------------------------------------- */
+.dropdown-item {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--dark-color);
+  font-family: var(--heading-font);
+}
+
+.dropdown-item.active,
+.dropdown-item:hover,
+.dropdown-item:active {
+  color: var(--dark-color);
+  background-color: var(--bs-gray-300);
+}
+
+.dropdown-toggle::after {
+  border: none;
+  margin-left: 0em;
+  vertical-align: 0em;
+}
+
+/* Breadcrumb
+------------------------------------------------------------- */
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--bs-light);
+  position: relative;
+}
+
+/* Pagination
+------------------------------------------------------------- */
+.pagination {
+  --bs-pagination-color: var(--black-color);
+  --bs-pagination-hover-color: #fff;
+  --bs-pagination-hover-bg: var(--primary-color);
+  --bs-pagination-hover-border-color: var(--primary-color);
+  --bs-pagination-focus-color: #fff;
+  --bs-pagination-focus-bg: var(--primary-color);
+  --bs-pagination-focus-box-shadow: none;
+  --bs-pagination-active-bg: var(--primary-color);
+  --bs-pagination-active-border-color: var(--primary-color);
+}
+
+/* Accordion
+------------------------------------------------------------- */
+.accordion {
+  --bs-accordion-btn-icon: url("https://api.iconify.design/ion/caret-down.svg?color=%23F2B821&width=30");
+  --bs-accordion-btn-active-icon: url("https://api.iconify.design/ion/caret-down.svg?color=%23F2B821&width=30");
+  --bs-accordion-border-radius: 0px;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* Form
+------------------------------------------------------------- */
+.form-control:focus {
+  border: 1px solid #acacac;
+  box-shadow: none;
+}
+
+/* Swiper
+------------------------------------------------------------- */
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px);
+  width: var(
+    --swiper-pagination-bullet-width,
+    var(--swiper-pagination-bullet-size, 12px)
+  );
+  height: var(
+    --swiper-pagination-bullet-height,
+    var(--swiper-pagination-bullet-size, 12px)
+  );
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--dark-color);
+}
+
+/* Modal Video
+------------------------------------------------------------- */
+.modal-dialog {
+  max-width: 800px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.modal-content {
+  padding: 0;
+  background-color: #f5f3ef;
+  border: none;
+  border-radius: 0;
+}
+
+/*----------------------------------------------*/
+/* 4 SITE STRUCTURE */
+/*----------------------------------------------*/
+
+/* 4.1 Header
+/*----------------------------------------------*/
+a.nav-link {
+  text-transform: capitalize;
+  font-weight: 500;
+  color: var(--dark-color);
+  font-family: var(--heading-font);
+  transition: all 0.3s ease-in-out;
+}
+
+a.nav-link::after {
+  content: "";
+  text-align: center;
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  transition: width 0.9s;
+}
+
+a.nav-link.active::after,
+a.nav-link:focus::after,
+a.nav-link:hover::after {
+  width: 100%;
+  transition: width 0.9s;
+}
+
+#primary-header .dropdown .search::after {
+  content: none;
+}
+
+#primary-header .search-dropdown .dropdown-menu {
+  width: 260px;
+}
+
+#primary-header .search-dropdown .dropdown-menu input {
+  min-width: 100%;
+}
+
+#primary-header .search-dropdown .dropdown-menu button {
+  padding: 0 12px;
+  min-height: -webkit-fill-available;
+  border-radius: 0.25rem;
+}
+
+@media only screen and (max-width: 990px) {
+  a.nav-link {
+    font-size: 1.5rem;
+  }
+
+  a.nav-link.active::after,
+  a.nav-link:focus::after,
+  a.nav-link:hover::after {
+    width: 0%;
+  }
+
+  a.nav-link.active,
+  a.nav-link:focus,
+  a.nav-link:hover {
+    color: var(--primary-color) !important;
+  }
+}
+
+/* 4.2 Brand Section
+/*----------------------------------------------*/
+img.brand-image {
+  filter: contrast(0);
+  transition: all 0.3s ease-in;
+}
+
+img.brand-image:hover {
+  filter: contrast(1);
+}
+
+/* 4.3 About Section 
+/*----------------------------------------------*/
+svg.play-icon {
+  animation: play 1.5s alternate infinite ease-in;
+}
+
+@keyframes play {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* 4.4 Services Section
+/*----------------------------------------------*/
+/* Jarallax */
+.jarallax {
+  min-height: 350px;
+  transition: all 0.5s ease-in-out;
+}
+
+.service-block {
+  transition: all 0.5s ease-in-out;
+}
+
+.service-block:hover .jarallax {
+  opacity: 0;
+}
+
+.service-btn {
+  transition: all 0.5s ease-in-out;
+}
+
+.service-block:hover .service-btn {
+  color: var(--dark-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* 4.5 Project Section
+/*----------------------------------------------*/
+.swiper-slide.swiper-width {
+  width: auto !important;
+}
+
+.project-content .portfolio-img {
+  transition: all 0.5s ease-in-out;
+}
+
+.project-content:hover .portfolio-img {
+  opacity: 0.3;
+}
+
+.portfolio-description {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-content:hover .portfolio-description {
+  opacity: 1;
+}
+
+/* 4.6 CTA Section
+/*----------------------------------------------*/
+.border-dotted {
+  border: 2px dashed rgba(255, 255, 255, 0.5);
+}
+
+/*----------------------------------------------*/
+/* 5 PAGES STYLE */
+/*----------------------------------------------*/
+
+/* 5.1 Projects Page
+/*----------------------------------------------*/
+
+button.filter-button {
+  border: 0;
+  background: transparent;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+  border-radius: 20px;
+}
+
+button.filter-button.active,
+button.filter-button:hover {
+  color: var(--bs-light);
+  background: var(--primary-color);
+}
+
+/*--------------------------------------------------------------
+ 5.2 Pricing page 
+  --------------------------------------------------------------*/
+.plan-post {
+  border: 1px solid var(--secondary-color);
+}
+
+span.price-tick {
+  color: var(--primary-color);
+}
+
+.price-option {
+  height: 300px;
+}
+
+/*--------------------------------------------------------------
+ 5.3 Reviews page
+--------------------------------------------------------------*/
+
+.reviews-components {
+  box-shadow: 0px 12px 90px rgba(12, 12, 12, 0.06);
+}
+
+iconify-icon.quote {
+  font-size: 60px;
+  color: var(--primary-color);
+}
+
+.rate {
+  color: var(--primary-color);
+}
+
+/* Penyesuaian CSS */
+/* -----  Services  ----- */
+.main-services {
+  margin-top: 40px;
+  padding: 25px 30px;
+  background-color: #fff;
+  box-shadow: rgba(33, 33, 33, 0.06) 0 4px 24px 5px;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 1s;
+}
+
+.main-services:hover {
+  margin-top: 25px;
+  transition: all 1s;
+}
+
+.main-services i {
+  display: block;
+  font-size: 46px;
+  margin-bottom: 5px;
+}
+
+.main-services p {
+  padding: 0 10px;
+}
+
+.navbar-brand img {
+  height: 100;
+  max-height: 60px;
+  width: auto;
+}
+
+/*--------------------------------------------------------------
+ 6.1 Images
+--------------------------------------------------------------*/
+/* [Wrap Picture]*/
+.wrap-pic-s,
+.wrap-pic-max-s,
+.wrap-pic-w,
+.wrap-pic-max-w,
+.wrap-pic-h,
+.wrap-pic-max-h {
+  display: block;
+}
+
+.wrap-pic-w > img {
+  width: 100%;
+}
+.wrap-pic-max-w > img {
+  max-width: 100%;
+}
+
+.wrap-pic-h > img {
+  height: 100%;
+}
+.wrap-pic-max-h > img {
+  max-height: 100%;
+}
+
+.wrap-pic-s > img {
+  width: 100%;
+  height: 100%;
+}
+.wrap-pic-max-s > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* style tambahan */
+/* sidebar ---------------------------------------------*/
+.how2 {
+  height: 50px;
+  border: 1px solid #e6e6e6;
+  padding: 0 18px;
+  position: relative;
+}
+
+.how2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: calc(100% + 2px);
+  top: -1px;
+  left: -1px;
+}
+
+.how2-cl1::before {
+  background-color: #e71d69;
+}
+
+.how2-cl2::before {
+  background-color: #15a752;
+}
+
+.how2-cl3::before {
+  background-color: #e3724a;
+}
+
+.how2-cl4::before {
+  background-color: #333;
+}
+
+.how2-cl5::before {
+  background-color: #00b5e9;
+}
+
+.how2-cl6::before {
+  background-color: #2489b0;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ S-Text 0 - 15 ]*/
+.f1-s-1 {
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.f1-s-2 {
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.f1-s-3 {
+  font-family: Roboto-Regular;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.f1-s-4 {
+  font-family: Roboto-Bold;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.f1-s-5 {
+  font-family: Roboto-Medium;
+  font-size: 15px;
+  line-height: 1.333333;
+}
+
+.f1-s-6 {
+  font-family: Roboto-Medium;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.f1-s-7 {
+  font-family: Roboto-Medium;
+  font-size: 15px;
+  line-height: 1.466667;
+}
+
+.f1-s-8 {
+  font-family: Roboto-Medium;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.f1-s-9 {
+  font-family: Roboto-Black;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.f1-s-10 {
+  font-family: Roboto-Bold;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.f1-s-11 {
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.f1-s-12 {
+  font-family: Roboto-Regular;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.f1-s-13 {
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* //////////////////////////////////////////////////////////////////
+[ M-Text 16 - 25 ] */
+
+.f1-m-1 {
+  font-family: Roboto-Medium;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.f1-m-2 {
+  font-family: Roboto-Medium;
+  font-size: 18px;
+  line-height: 1.333333;
+}
+
+.f1-m-3 {
+  font-family: Roboto-Regular;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.f1-m-4 {
+  font-family: Roboto-Bold;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.f1-m-5 {
+  font-family: Roboto-Bold;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.f1-m-6 {
+  font-family: Roboto-Regular;
+  font-size: 18px;
+  line-height: 1.333333;
+}
+
+.f1-m-7 {
+  font-family: Roboto-Bold;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ L-Text >= 26 ]*/
+
+.f1-l-3 {
+  font-family: Roboto-Medium;
+  font-size: 30px;
+  line-height: 1.3;
+}
+
+
+
+/*---------------------------------------------*/
+.tab01-link {
+  padding-left: 10px;
+  white-space: nowrap;
+}
+
+.tab01-title {
+  padding-right: 25px;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Width ]*/
+.size-w-0 {
+  flex-grow: 1;
+}
+
+.size-w-1 {
+  width: 100px;
+}
+
+.size-w-2 {
+  width: calc(100% - 118px);
+}
+
+.size-w-3 {
+  width: calc(100% - 48px);
+}
+
+.size-w-4 {
+  width: 80px;
+}
+
+.size-w-5 {
+  width: calc(100% - 95px);
+}
+
+.size-w-6 {
+  width: calc(62% - 20px);
+}
+
+.size-w-7 {
+  width: calc(38% - 20px);
+}
+
+.size-w-8 {
+  width: 260px;
+}
+
+.size-w-9 {
+  width: calc(100% - 285px);
+}
+
+.size-w-10 {
+  width: 100px;
+}
+
+.size-w-11 {
+  width: calc(100% - 118px);
+}
+
+/* [ Hover ] */
+
+.hov-cl0:hover {
+  color: #fff;
+}
+.hov-bg0:hover {
+  background-color: #fff;
+}
+
+.hov-cl10:hover {
+  color: #17b978;
+}
+.hov-bg10:hover {
+  background-color: #17b978;
+}
+
+/*---------------------------------------------*/
+.hov1:hover {
+  opacity: 0.8;
+}
+
+/*==================================================================
+   COLOR COLOR COLOR COLOR COLOR COLOR COLOR COLOR COLOR COLOR COLOR 
+==================================================================*/
+.bocl0 {
+  border-color: #fff;
+}
+.bocl1 {
+  border-color: #111;
+}
+.bocl2 {
+  border-color: #222;
+}
+.bocl3 {
+  border-color: #333;
+}
+.bocl4 {
+  border-color: #444;
+}
+.bocl5 {
+  border-color: #555;
+}
+.bocl6 {
+  border-color: #666;
+}
+.bocl7 {
+  border-color: #777;
+}
+.bocl8 {
+  border-color: #888;
+}
+.bocl9 {
+  border-color: #999;
+}
+.bocl10 {
+  border-color: #17b978;
+}
+.bocl11 {
+  border-color: #e6e6e6;
+}
+.bocl12 {
+  border-color: #ccc;
+}
+.bocl13 {
+  border-color: #d9d9d9;
+}
+
+/*---------------------------------------------*/
+.cl-none {
+  color: transparent;
+}
+.cl0 {
+  color: #fff;
+}
+.cl1 {
+  color: #111;
+}
+.cl2 {
+  color: #222;
+}
+.cl3 {
+  color: #333;
+}
+.cl4 {
+  color: #444;
+}
+.cl5 {
+  color: #555;
+}
+.cl6 {
+  color: #666;
+}
+.cl7 {
+  color: #777;
+}
+.cl8 {
+  color: #888;
+}
+.cl9 {
+  color: #999;
+}
+.cl10 {
+  color: #17b978;
+}
+.cl11 {
+  color: #ccc;
+}
+.cl12 {
+  color: #e71d69;
+}
+.cl13 {
+  color: #15a752;
+}
+.cl14 {
+  color: #e3724a;
+}
+.cl15 {
+  color: #b2b2b2;
+}
+.cl16 {
+  color: #e5e5e5;
+}
+.cl17 {
+  color: #00b5e9;
+}
+.cl18 {
+  color: #2489b0;
+}
+
+/* ----------- */
+.how-bor3:first-child {
+  border-top: 1px solid #e6e6e6;
+}
