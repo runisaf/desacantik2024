@@ -19,7 +19,7 @@
     />
 
     <!--vendor css ================================================== -->
-    <link rel="stylesheet" type="text/css" href="css/vendor.css" />
+    <link rel="stylesheet" type="text/css" href="../css/vendor.css" />
 
     <!--Link Swiper's CSS ================================================== -->
     <link
@@ -29,6 +29,13 @@
 
     <!-- Style Sheet ================================================== -->
     <link rel="stylesheet" type="text/css" href="../style.css" />
+    <!--===============================================================================================-->
+	  <link rel="stylesheet" type="text/css" href="../css/util.min.css">
+    <!--===============================================================================================-->
+	<!-- <link rel="stylesheet" type="text/css" href="../vendor/animsition/css/animsition.min.css"> -->
+   
+  <!-- Icon Font Awesome ================================================== -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- Google Fonts ================================================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -104,6 +111,10 @@
           d="M3.25 10.143C3.25 5.244 7.155 1.25 12 1.25c4.845 0 8.75 3.994 8.75 8.893c0 2.365-.674 4.905-1.866 7.099c-1.19 2.191-2.928 4.095-5.103 5.112a4.2 4.2 0 0 1-3.562 0c-2.175-1.017-3.913-2.92-5.103-5.112c-1.192-2.194-1.866-4.734-1.866-7.099M12 2.75c-3.992 0-7.25 3.297-7.25 7.393c0 2.097.603 4.392 1.684 6.383c1.082 1.993 2.612 3.624 4.42 4.469a2.7 2.7 0 0 0 2.291 0c1.809-.845 3.339-2.476 4.421-4.469c1.081-1.99 1.684-4.286 1.684-6.383c0-4.096-3.258-7.393-7.25-7.393m0 5a2.25 2.25 0 1 0 0 4.5a2.25 2.25 0 0 0 0-4.5M8.25 10a3.75 3.75 0 1 1 7.5 0a3.75 3.75 0 0 1-7.5 0"
           clip-rule="evenodd"
         />
+      </symbol>
+      <symbol id="navbar-icon" viewBox="0 0 16 16">
+        <path
+          d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z" />
       </symbol>
     </svg>
 
@@ -306,84 +317,305 @@
       </nav>
     </header>
 
-    <!-- tentang kami - about us -->
-    <div class="container">
+    <!-- bar lokasi saat ini /Sejarah Desa -->
+    <div class="container p-t-30">
       <div class="bar-tengah">
         <div
-          class="pt-3 mt-5 bg-gray text-white border border-secondary rounded bar-lokasi"
+          class="p-t-3 m-t-5 bg-gray text-white border border-secondary rounded bar-lokasi"
         >
-          <p class="ms-3">/ Tentang Kami</p>
+          <p class="ms-3 m-t-15 m-b-15">/ Sejarah Desa</p>
         </div>
       </div>
+    </div>
 
-      <!-- <section id="about-us"> -->
-      <!-- video -->
-      <!-- <div class="container mt-5 pt-5">
-          <div class="g-md-5 align-items-center">
-            <div class="col-lg-7">
-              <div class="imageblock position-relative">
-                <img class="img-fluid" src="../images/kec_nita.JPG" alt="img" />
+    <!-- Sejarah Desa -->
+    <!-- Content -->
+    <section class="m-t-5 bg0 p-b-140 p-t-10">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8 p-b-30">
+            <div class="p-r-10 p-r-0-sr991">
+              <!-- Blog Detail -->
+              <div class="p-b-70">
+                <h3 class="f1-l-3 cl2 p-b-16 p-t-33 respon2">
+                  Sejarah Desa Nita
+                </h3>
+
+                <div class="flex-wr-s-s p-b-30">
+                  <span class="f1-s-3 cl8 m-r-15">
+                    <a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
+                      by Pemerintah Desa Nita
+                    </a>
+
+                    <span class="m-rl-3">-</span>
+
+                    <span> Feb 18 </span>
+                  </span>
+
+                  <span class="f1-s-3 cl8 m-r-15"> 5239 Views </span>
+                </div>
+
+                <div class="wrap-pic-w p-b-30">
+                  <img src="../images/kantor_nita.JPG" alt="IMG" />
+                </div>
+
+                <p class="f1-s-11 cl2 p-b-25">
+                  Dari sejarah lisan dan tulisan berkembang, dikisahkan bahwa nenek moyang orang Nita berasal 
+                  dari Tanah Siam, Cina atau Ata Siang Sina. Ketika tiba di Niang Nita, mereka mendirikan sebuah 
+                  menhir sebagai simbol pemersatu budaya yang disebut Mahe Sirang Sina. Disebutkan ada 3 orang 
+                  tokoh yang terkenal dari Ata Siang Sina dengan nama lokal mereka yaitu Moan Ria, Moan Guniang 
+                  dan Moan Raga. Mereka tinggal dan menetap dalam waktu yang lama dan melakukan hubungan 
+                  kawin mawin dengan penduduk lokal di sekitarnya. Moan Ria dan keluarganya kemudian menetap 
+                  di Ilin Bekor dan menurunkan Orang Hokor. Moan Guniang dan keluarganya mendiami Ilin Gai 
+                  dan menurunkan Orang Sikka, Koting dan Kode atau Nele. Sedangkan Moan Raga bersama 
+                  keluarganya berdiam di Ilin Newa dan menurunkan Orang Nita. Moan Raga mempunyai seorang 
+                  putra bernama Moan Desa. Moan Desa mempunyai dua orang putra bernama Moan Sisa dan 
+                  Moan Hila. Moan Sisa disebut juga ‘Sisa Mitang Niang Nita’ karena beliaulah yang kemudian 
+                  menurunkan Orang Nita. Dan Moan Hila disebut ‘Hila Bura Romanduru’ yang kemudian 
+                  menurunkan Orang Romanduru Eha. Moan Sisa Mitang mempunyai dua orang putra bernama 
+                  Moan Lolo dan Moan Jong. Keduanya lazim disebut terpadu Lolo Jong. Dari keturunan Lolo Jong 
+                  inilah, kemudian lahirlah raja-raja Kerajaan Nita. <br>
+                  Nama ‘Nita’ sendiri sesuai tuturan sejarah berasal dan diambil dari nama sebuah pohon yang 
+                  dalam bahasa Sikka disebut ‘AI NITA’ atau Pohon Nita. Diduga nama Nita berasal dari serapan 
+                  kosa kata bahasa Latin ‘GNITACIAE’ yang merupakan nama ilmiah dan familia dari sebuah 
+                  tetumbuhan pohon Gnitum Gnitae. Dari kosa kata Gnitaciae ini kemudian mengalami variasi 
+                  penyebutan dan terserap ke dalam kata bahasa Sikka menjadi ‘GNITA’ atau ‘NITA’.  
+                  Penduduk Nita pada waktu itu hidup berkelompok dalam satu kesatuan adat atau suku yang 
+                  disebut lepo dan dipimpin oleh seorang Kepala Suku. Dari suku atau lepo inilah yang membentuk 
+                  persekutuan Kampung atau Natar di bawah pimpinan Kepala Kampung. Dari catatan sejarah, 
+                  tercatat kurang lebih 7 (tujuh) suku atau lepo yang hidup dan berkembang sampai dengan 
+                  sekarang antara lain; Lepo Ratu (Orin Bao Nata Ulun/Orin Bao Reta Une), Lepo Raja (Welak), 
+                  Lepo Orin Bao (Orin Bao Wawa Tedang), Lepo Kolit, Lepo Degodona, Lepo Lorat, dan Lepo Tour 
+                  Orin Gete. Kesemuanya hidup bersama dan berdampingan dalam kesatuan Natar Nita (Kampung 
+                  Nita). Natar Nita kemudian berkembang sebagai Kerajaan Nita yang menguasai Napung Pitu 
+                  Wolon Walu dengan Lepo Orin Bao Nata Ulun atau Lepo Ratu sebagai Rajanya. <br>
+
+                </p>
+
+                
               </div>
-            </div> -->
+            </div>
+          </div>
 
-      <!-- Tentang Kami -->
-      <!-- <div class="col-lg-7 mt-5">
-              <h3 class="display-6 fw-semibold mb-4">
-                Desa Nita, Kecamatan Nita
-              </h3>
-              <p>Selamat Datang di Website Desa Nita</p>
+          <!-- Sidebar -->
+          <div class="col-md-10 col-lg-4 p-b-30">
+            <div class="p-l-10 p-rl-0-sr991 p-t-70">
+              <!-- Popular Posts -->
+              <div class="p-b-30">
+                <div class="how2 how2-cl4 flex-s-c">
+                  <h3 class="f1-m-2 cl3 tab01-title">Popular Post</h3>
+                </div>
 
-              <span class="fw-semibold">Kondisi Geografis</span>
+                <ul class="p-t-40 p-l-0">
+                  <li class="flex-wr-sb-s p-b-20">
+                    <a href="#" class="size-w-10 wrap-pic-w hov1 trans-03">
+                      <img src="../images/gereja.JPG" alt="IMG" />
+                    </a>
 
-              <p>
-                Desa Nita terletak di ibukota Kecamatan Nita Kabupaten Sikka
-                dengan luas wilayah 2,10 km2 , berada pada ketinggian 240-300
-                mdpl dengan kemiringan lahan 8-14% serta beriklim tropis kering
-                tipe C-D dan temperature udara dalam kisaran rata-rata 260C -
-                360C.
-                <br />
-                Orbitasi atau jarak tempuh dari desa ke ibukota Kecamatan ±0,5
-                km dengan lama tempuh ±0,3 jam dan ke ibukota Kabupaten 11 km
-                dengan lama tempuh ±0,15-0,20 jam, dengan batas wilayah sebagai
-                berikut:
-              </p>
-              <ul>
-                <li>Sebelah Utara : Desa Nitakloang</li>
-                <li>Sebelah Selatan : Desa Tebuk dan Desa Koting A</li>
-                <li>Sebelah Barat : Desa Bloro dan Desa Lusitada</li>
-                <li>Sebelah Timur : Desa Takaplager</li>
+                    <div class="size-w-11">
+                      <h6 class="">
+                        <a
+                          href="#"
+                          class="f1-s-5 cl3 hov-cl10"
+                        >
+                          Donec metus orci, malesuada et lectus vitae
+                        </a>
+                      </h6>
+
+                      <span class="cl8 txt-center p-b-14">
+                        <a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+                          Music
+                        </a>
+
+                        <span class="f1-s-3 m-rl-3"> - </span>
+
+                        <span class="f1-s-3"> Feb 18 </span>
+                      </span>
+                    </div>
+                  </li>
+
+                  <li class="flex-wr-sb-s p-b-30">
+                    <a href="#" class="size-w-10 wrap-pic-w hov1 trans-03">
+                      <img src="../images/polsek_nita.JPG" alt="IMG" />
+                    </a>
+
+                    <div class="size-w-11">
+                      <h6 class="p-b-4">
+                        <a
+                          href="blog-detail-02.html"
+                          class="f1-s-5 cl3 hov-cl10 trans-03"
+                        >
+                          Donec metus orci, malesuada et lectus vitae
+                        </a>
+                      </h6>
+
+                      <span class="cl8 txt-center p-b-24">
+                        <a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+                          Game
+                        </a>
+
+                        <span class="f1-s-3 m-rl-3"> - </span>
+
+                        <span class="f1-s-3"> Feb 16 </span>
+                      </span>
+                    </div>
+                  </li>
+
+                  <li class="flex-wr-sb-s p-b-30">
+                    <a href="#" class="size-w-10 wrap-pic-w hov1 trans-03">
+                      <img src="../images/kec_nita.JPG" alt="IMG" />
+                    </a>
+
+                    <div class="size-w-11">
+                      <h6 class="p-b-4">
+                        <a
+                          href="blog-detail-02.html"
+                          class="f1-s-5 cl3 hov-cl10 trans-03"
+                        >
+                          Donec metus orci, malesuada et lectus vitae
+                        </a>
+                      </h6>
+
+                      <span class="cl8 txt-center p-b-24">
+                        <a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+                          Celebrity
+                        </a>
+
+                        <span class="f1-s-3 m-rl-3"> - </span>
+
+                        <span class="f1-s-3"> Feb 12 </span>
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="bg-dark p-t-20 p-b-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 p-b-10">
+              <div class="size-h-3 flex-s-c">
+                <a href="index.html" class="navbar-brand">
+                  <img class="max-s-full" src="../images/logo_sikka.png" alt="LOGO">
+                </a>
+              </div>
+
+              <div>
+                <p class="f1-s-1 cl11 p-b-16">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor magna eget elit efficitur, at accumsan sem placerat. Nulla tellus libero, mattis nec molestie at, facilisis ut turpis. Vestibulum dolor metus, tincidunt eget odio
+                </p>
+
+                <p class="f1-s-1 cl11 p-b-16">
+                  Any questions? Call us on (+1) 96 716 6879
+                </p>
+
+                <div class="p-t-15">
+                  <a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+                    <span class="fab fa-facebook-f"></span>
+                  </a>
+
+                  <a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+                    <span class="fab fa-twitter"></span>
+                  </a>
+
+                  <a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+                    <span class="fab fa-pinterest-p"></span>
+                  </a>
+
+                  <a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+                    <span class="fab fa-vimeo-v"></span>
+                  </a>
+
+                  <a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+                    <span class="fab fa-youtube"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 p-b-10 justify-content-between">
+              <div class="size-h-3 flex-s-c">
+                <h5 class="f1-m-7 cl0">
+                  Tautan
+                </h5>
+              </div>
+
+              <ul class="">
+                <li class="flex-wr-sb-s p-b-20">
+                  <div class="size-w-5">
+                    <h6 class="p-b-5">
+                      <a href="#" class="f1-s-7 cl11 hov-cl10 trans-03">
+                        Kabupaten Sikka
+                      </a>
+                    </h6>
+                  </div>
+                </li>
+
+                <li class="flex-wr-sb-s p-b-20">
+                  <div class="size-w-5">
+                    <h6 class="p-b-5">
+                      <a href="#" class="f1-s-7 cl11 hov-cl10 trans-03">
+                        JDIH Sikka
+                      </a>
+                    </h6>
+                  </div>
+                </li>
+
+                <li class="flex-wr-sb-s p-b-20">
+                  <div class="size-w-5">
+                    <h6 class="p-b-5">
+                      <a href="#" class="f1-s-7 cl11 hov-cl10 trans-03">
+                        Mal Pelayanan Publik Kabupaten Sikka
+                      </a>
+                    </h6>
+                  </div>
+                </li>
               </ul>
             </div>
-          </div> 
-        </div>
-      </section> -->
-    </div>
-    <!-- bar lokasi saat ini -->
 
-    <footer id="footer">
-      <div class="container padding-small">
-        <div class="row flex-wrap justify-content-between">
-          <div class="col-lg-6 col-md-6">
-            <div class="footer-menu">
-              <h4><span class="text-primary">|</span> Kontak Desa Nita</h4>
-              <ul class="menu-list d-flex flex-column list-unstyled">
-                <li class="fw-medium text-capitalize d-flex align-items-center">
-                  <svg class="text-primary me-1" width="18" height="18">
-                    <use xlink:href="#location"></use>
-                  </svg>
-                  <a href="#"> Desa Nita, Kec. Nita, Sikka </a>
+            <div class="col-sm-6 col-lg-4 p-b-20">
+              <div class="size-h-3 flex-s-c">
+                <h5 class="f1-m-7 cl0">
+                  Kontak Pemerintah
+                </h5>
+              </div>
+  
+              <ul class="m-t--12">
+                <li class="how-bor1 p-rl-5 p-tb-10">
+                  <a href="#" class="f1-s-7 cl11 hov-cl10 trans-03 p-tb-8">
+                    Fashion (22)
+                  </a>
                 </li>
-                <li class="fw-medium d-flex align-items-center">
-                  <svg class="text-primary me-1" width="18" height="18">
-                    <use xlink:href="#email"></use>
-                  </svg>
-                  <a href="#"> desanita@gmail.com </a>
+  
+                <li class="how-bor1 p-rl-5 p-tb-10">
+                  <a href="#" class="f1-s-7 cl11 hov-cl10 trans-03 p-tb-8">
+                    Technology (29)
+                  </a>
                 </li>
-                <li class="fw-medium text-capitalize d-flex align-items-center">
-                  <svg class="text-primary me-1" width="18" height="18">
-                    <use xlink:href="#clock"></use>
-                  </svg>
-                  <a href="#"> Senin-Jumat, 08.00 - 16.00 WITA </a>
+  
+                <li class="how-bor1 p-rl-5 p-tb-10">
+                  <a href="#" class="f1-s-7 cl11 hov-cl10 trans-03 p-tb-8">
+                    Street Style (15)
+                  </a>
+                </li>
+  
+                <li class="how-bor1 p-rl-5 p-tb-10">
+                  <a href="#" class="f1-s-7 cl11 hov-cl10 trans-03 p-tb-8">
+                    Life Style (28)
+                  </a>
+                </li>
+  
+                <li class="how-bor1 p-rl-5 p-tb-10">
+                  <a href="#" class="f1-s-7 cl11 hov-cl10 trans-03 p-tb-8">
+                    DIY & Crafts (16)
+                  </a>
                 </li>
               </ul>
             </div>
@@ -391,21 +623,29 @@
         </div>
       </div>
 
-      <hr class="m-0" />
+      <div class="bg-black">
+        <div class="container size-h-4 flex-c-c">
+          <span class="f1-s-1 cl0 txt-center">
+            <!-- Copyright © 2018 -->
 
-      <div class="container">
-        <div class="footer-bottom d-md-flex justify-content-center py-4">
-          <p class="mb-0">© 2024 BPS Kabupaten Sikka - All rights reserved</p>
+            <a href="#" class="f1-s-1 cl10 hov-link1"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </span>
         </div>
       </div>
     </footer>
 
-    <script src="js/jquery-1.11.0.min.js"></script>
+
+
+    <script src="../js/jquery-1.11.0.min.js"></script>
     <!-- <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script> -->
-    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="../js/plugins.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!--===============================================================================================-->
+	<script src="../vendor/animsition/js/animsition.min.js"></script>
   </body>
 </html>

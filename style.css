@@ -115,6 +115,24 @@ CSS STRUCTURE:
   src: url('../fonts/Lato/Lato-Regular.ttf'); 
 }
 
+/*------------------------------------------------------------------
+[ Bootstrap ]*/
+.container {max-width: 1080px;}
+
+/*[ LOADDING ]*/
+.animsition-loading-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
 /*----------------------------------------------*/
 /* 2 GENERAL TYPOGRAPHY
 /*----------------------------------------------*/
@@ -135,7 +153,7 @@ html {
 
 body {
   background-color: var(--light-color);
-  font-family: var(--body-font);
+  font-family: var(--body-font) ;
   font-size: 16px;
   font-weight: 400;
   line-height: 164%;
@@ -253,11 +271,11 @@ h4,
 h5,
 h6 {
   color: var(--dark-color);
-  font-family: var(--heading-font);
+  font-family: var(--heading-font) !important;
   text-transform: capitalize;
   font-weight: 600;
-  letter-spacing: 0.84px;
-  line-height: 115%;
+  /* letter-spacing: 0.84px;
+  line-height: 115%; */
 }
 
 h6 {
@@ -289,10 +307,6 @@ h6 {
 
 .size-h-2 {
   min-height: 40px;
-}
-
-.size-h-3 {
-  height: 95px;
 }
 
 .size-h-3 {
@@ -459,7 +473,7 @@ h6 {
   text-transform: uppercase;
   font-weight: 500;
   color: var(--dark-color);
-  font-family: var(--heading-font);
+  font-family: var(--heading-font) !important;
 }
 
 .dropdown-item.active,
@@ -567,7 +581,7 @@ a.nav-link {
   text-transform: capitalize;
   font-weight: 500;
   color: var(--dark-color);
-  font-family: var(--heading-font);
+  font-family: var(--heading-font) !important;
   transition: all 0.3s ease-in-out;
 }
 
@@ -899,14 +913,14 @@ iconify-icon.quote {
 
 .f1-s-5 {
   font-family: Roboto-Medium;
-  font-size: 15px;
-  line-height: 1.333333;
+  font-size: 13px;
+  /* line-height: 1.333333; */
 }
 
 .f1-s-6 {
   font-family: Roboto-Medium;
   font-size: 12px;
-  line-height: 1.7;
+  line-height: 1.33333;
 }
 
 .f1-s-7 {
@@ -1199,4 +1213,13 @@ iconify-icon.quote {
 /* ----------- */
 .how-bor3:first-child {
   border-top: 1px solid #e6e6e6;
+}
+
+/* ----------- */
+.filter-categories {
+  width: 100%;
+  margin-bottom: 20px !important;
+  border: 1px solid #d1d1d1 !important;
+  padding: 14px;
+  border-radius: 8px;
 }
