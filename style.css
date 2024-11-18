@@ -274,8 +274,8 @@ h6 {
   font-family: var(--heading-font) !important;
   text-transform: capitalize;
   font-weight: 600;
-  /* letter-spacing: 0.84px;
-  line-height: 115%; */
+  letter-spacing: 0.84px;
+  line-height: 115%;
 }
 
 h6 {
@@ -391,13 +391,23 @@ h6 {
 --------------------------------------------------------------*/
 
 .btn {
-  --bs-btn-padding-x: 2rem;
+  /* --bs-btn-padding-x: 2rem;
   --bs-btn-padding-y: 1rem;
   --bs-btn-font-size: 1rem;
   --bs-btn-font-weight: 500;
   text-transform: uppercase;
   border-radius: 0px;
   transition: all 0.5s ease-in-out;
+  color: #212529;
+  font-weight: 400; */
+  padding: 10px 20px;
+  border-radius: 4px;
+  border-color: none;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
 }
 
 /* - Primary Buttons
@@ -1013,8 +1023,38 @@ iconify-icon.quote {
 /*//////////////////////////////////////////////////////////////////
 [ L-Text >= 26 ]*/
 
+.f1-l-1 {
+  font-family: Roboto-Medium;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.f1-l-2 {
+  font-family: Roboto-Medium;
+  font-size: 22px;
+  line-height: 1.272727;
+}
+
 .f1-l-3 {
   font-family: Roboto-Medium;
+  font-size: 30px;
+  line-height: 1.3;
+}
+
+.f1-l-4 {
+  font-family: Roboto-Bold;
+  font-size: 22px;
+  line-height: 1.545454;
+}
+
+.f1-l-5 {
+  font-family: Roboto-Medium;
+  font-size: 36px;
+  line-height: 1.333333;
+}
+
+.f1-l-6 {
+  font-family: Roboto-Regular;
   font-size: 30px;
   line-height: 1.3;
 }
@@ -1222,4 +1262,47 @@ iconify-icon.quote {
   border: 1px solid #d1d1d1 !important;
   padding: 14px;
   border-radius: 8px;
+}
+
+/* Berita ----------------------- */
+.comment-wrap .heading, .search-result-wrap .heading {
+  font-size: 18px;
+  color: #000;
+  font-weight: 400;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e6e6e6; }
+    
+.btn-outline-primary {
+  color: #214252; 
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto; }
+
+.posts-entry .blog-entry img {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 10px;
+  margin-bottom: 10px; 
+}
+
+.custom-pagination span, .custom-pagination a {
+  text-align: center;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%; 
+}
+
+.custom-pagination a {
+  background: #214252;
+  color: #fff; 
+}
+
+.custom-pagination a:hover {
+  background: #214252; 
 }
